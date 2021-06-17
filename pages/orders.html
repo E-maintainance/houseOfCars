@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/orders.css">
+    
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+             <img class="logoimg"src="/images/logo.png" alt="logo" >
+            <h3>House Of Cars</h3>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+
+
+            <li>
+
+                <a href="/pages/ourservices.html" class="za">Our Services</a>
+                
+            </li>
+
+
+            <li>
+                <a href="/pages/rent.html">Rent</a>
+            </li>
+
+            <li>
+                <a href="/pages/aboutus.html">About Us</a>
+            </li>
+            <li>
+                <a href="/pages/feedback.html">FeedBack</a>
+            </li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+        </div>
+    </nav>
+</header>
+<main></main>
+    
+    
+
+
+
+
+<script>
+    var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+
+   
+    
+    let data=localStorage.getItem("Custmer_info")
+    let parse=JSON.parse(data)
+
+    let all_data = [];
+    all_data = parse;
+    
+console.log(all_data)
+for(let i=0;all_data.length;i++){
+  t=all_data[i].date.split("/")
+        t[1]=(parseInt(t[1])+(Math.floor(Math.random() * (7 - 0 + 1) ) + 0)).toString()
+        t=t.toString()
+        t=t.replace(/,/g, "/")
+       
+  document.write('<div class="container">')
+    document.write('<div class="card">')
+      document.write('<div class="box">')
+        document.write('<div class="content">')
+          document.write('<h2>'+'0'+i+'</h2>')
+          document.write('<h3>'+'Mr/Mrs:  '+all_data[i].lname+'</h3>')
+          document.write('<p>'+all_data[i].brand+"   "+all_data[i].model+"   "+all_data[i].year+'<br>'+'Deliver Date :'+t+'</p>')
+          document.write('<a href="#">Call Us</a>')
+          document.write ('</div>')
+          document.write('</div>')
+          document.write('</div>')
+          
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hind+Siliguri&display=swap');
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#lll{
+  margin-top: 100px;
+}
+#ma{
+  background-color: white!important;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans';
+  ;
+}
+.content{
+    text-align: center;
+}
+.lefth3{
+    text-align: left;
+}
+.leftp{
+    text-align: left;
+}
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid white;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(119,39,113,0.61);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: rgba(119,39,113,0.61);
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space .num {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+
+h1{
+  font-family: 'Do Hyeon', sans-serif;
+
+}
+
+div.et_pb_section.et_pb_section_0 {
+  background-image: radial-gradient(circle at center,rgba(59,20,71,0.85) 0%,rgba(119,39,113,0.61) 100%),url(https://phoenixautoshop.com/wp-content/uploads/2019/06/car_repair_shop-02.jpg)!important;
+}
+@media only screen and (min-width: 1350px){
+.et_pb_section {
+  padding: 54px 0;
+}}
+@media (min-width: 981px){
+.et_pb_section {
+  padding: 4% 0;
+}}
+.et_pb_section {
+  position: relative;
+  background-color: #fff;
+}
+.et_pb_section, .et_pb_slider .et_pb_slide {
+  background-position: 50%;
+  background-size: 100%;
+  background-size: cover;
+}
+.et_pb_all_tabs, .et_pb_column, .et_pb_counters .et_pb_counter_container, .et_pb_module, .et_pb_portfolio_item, .et_pb_posts_nav a, .et_pb_pricing_table, .et_pb_row, .et_pb_row_inner, .et_pb_slide, .et_pb_tab, .et_pb_with_background {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheet
+div {
+  display: block;
+}
+body, input, textarea, select {
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+body, .et_pb_column_1_2 .et_quote_content blockquote cite, .et_pb_column_1_2 .et_link_content a.et_link_main_url, .et_pb_column_1_3 .et_quote_content blockquote cite, .et_pb_column_3_8 .et_quote_content blockquote cite, .et_pb_column_1_4 .et_quote_content blockquote cite, .et_pb_blog_grid .et_quote_content blockquote cite, .et_pb_column_1_3 .et_link_content a.et_link_main_url, .et_pb_column_3_8 .et_link_content a.et_link_main_url, .et_pb_column_1_4 .et_link_content a.et_link_main_url, .et_pb_blog_grid .et_link_content a.et_link_main_url, body .et_pb_bg_layout_light .et_pb_post p, body .et_pb_bg_layout_dark .et_pb_post p {
+  font-size: 18px;
+}
+body {
+  font-family: Open Sans,Arial,sans-serif;
+  font-size: 14px;
+  color: #666;
+  background-color: #fff;
+  line-height: 1.7em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1;
+}
+
+.et_pb_row:after, .et_pb_row_inner:after, .et_pb_slides:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  width: 0;
+}
+
+.et_pb_bottom_inside_divider{color: #666;
+line-height: 1.7em;
+font-weight: 500;
+-webkit-font-smoothing: antialiased;
+font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+-webkit-text-size-adjust: 100%;
+vertical-align: baseline;
+background: 0 0;
+display: block;
+background-repeat-y: no-repeat;
+position: absolute;
+pointer-events: none;
+width: 100%;
+left: 0;
+right: 0;
+margin-bottom: -1px;
+background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDE0MFYwUzk5My40NiAxNDAgNjQwIDEzOSAwIDAgMCAwdjE0MHoiLz48L2c+PC9zdmc+);
+background-size: 100% 100px;
+bottom: 0;
+height: 100px;
+z-index: 1;}
+
+.et_pb_column.et_pb_column_1_2.et_pb_column_2.et_pb_css_mix_blend_mode_passthrough.et-last-child {
+
+color: #666;
+line-height: 1.7em;
+font-weight: 500;
+-webkit-font-smoothing: antialiased;
+font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+-webkit-text-size-adjust: 100%;
+vertical-align: baseline;
+background: 0 0;
+float: left;
+position: relative;
+z-index: 2;
+min-height: 1px;
+mix-blend-mode: unset!important;
+background-size: cover;
+background-position: 50%;
+background-repeat: no-repeat;
+width: 47.25%;
+margin-right: 0!important;
+}
+
+#ii{
+  width: 35%;
+    position: relative;
+    left: 20%;
+    float: left;
+}
+
+#pp{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  color:#fff;
+  margin-bottom: 40px;
+
+}
+
+  
+.et_pb_text_inner{
+  
+    position: relative;
+    left: 44%;
+    width: 56%;
+    font-size: 20px;
+    color: white;
+   
+
+}

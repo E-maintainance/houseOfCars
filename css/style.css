@@ -1,0 +1,439 @@
+/* .showcase::before,.showcase::after{
+    content: '';
+    color:white;
+    position: absolute;
+    height: 1px;
+    bottom:-550px;
+    right:0PX;
+    left:0PX;
+    background-color:red;
+    transform: skewY(50deg);
+    -webkit-transform: skewY(50deg);
+    -moz-transform:skewY(50deg) ;
+    -ms-transform: skewY(50deg);
+}
+.showcase{
+    height: 40px;
+    background-color: var(--primary-color);
+    color:white;
+    position: relative;
+} */
+.flex-container2 {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 127%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.flex-container2 > div {
+background-color: #f8f2f2;
+width: 50%;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+padding: 0;
+margin: 0;
+}
+#img1{
+  background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages0.westend61.de%2F0000751315pw%2Ftwo-car-mechanics-in-a-workshop-repairing-car-together-ZEF10724.jpg);
+  background-size: cover;
+}
+#img2{
+  background-image: url(../images/flexcar9.jpg);
+  background-size: cover;
+ 
+}
+#d2{
+  text-align: center;
+  line-height: normal;
+  padding: 68px;
+  font-size: 20px;
+  padding-top: 180px;
+}
+#p1{
+  font-weight: bold;
+}
+#b1:hover{
+  color: green;
+
+  
+}
+#b2:hover{
+color: green;}
+#d3{
+text-align: center;
+line-height: normal;
+padding: 68px;
+font-size: 20px; 
+padding-top: 150px;
+}
+
+#container{
+position: relative;
+}
+.bg-img{
+position: absolute;
+}
+#container h1 #num1 {
+position: absolute;
+font-size: 40px;
+color: rgb(247, 240, 240);
+top:120px;
+left: 160px;
+font-family: 'Mate SC', serif;;
+}
+#container h1 #num2{
+position: absolute;
+font-size: 44px;
+color: rgb(247, 240, 240);
+top:200px;
+font-family:'Mate SC', serif;
+}
+.flex-container {
+display: flex;
+flex-wrap: nowrap;
+background-color: rgb(10, 10, 10);
+height: 340px; 
+}
+#ourGalary{
+position: relative;
+top: 140%;
+}
+.flex-container > img {
+background-color: #f1f1f1;
+width: 24.6%;
+height: 130;
+margin: 0.3%;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+#ourGalary h1{
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 40px;
+  font-family: 'Mate', serif;
+}
+hr{
+width:10%;
+color: rgb(247, 240, 240);
+position: relative;
+right: -690px;
+}
+
+#ourGalary h2{
+margin-top: 4%;
+text-align: center;
+margin-bottom: 4%;
+font-size: 20px;
+}
+.showcase {
+color: lavenderblush;
+
+}
+.zaid {
+height: 60px;
+background-color: rgb(17, 17, 17);
+
+}
+.image1{
+position: relative;
+top:20px;
+right: 100px;
+}
+
+.zaid2 {
+height: 80px;
+background-color:rgb(233, 95, 45);
+
+
+
+}
+#logo{
+position: relative;
+left: 120px;
+width:100px ;
+height: 80px;
+top: -35px;
+
+}
+
+header nav ul li  {
+display: inline-block;
+bottom: -20px;
+
+}
+
+#aboutus{
+position:relative ;
+left: 300px;
+
+}
+#rentcar{
+position: relative;
+left: 280px;
+}
+#location{
+position:relative;
+left: 260px;
+}
+#home {
+position: relative;
+left: 240px;
+}
+header div img{
+position: relative;
+left: 280px;
+top: 0px;
+}
+
+.zaid2{
+color: white;
+}
+
+main section p{
+position: relative;
+top:100px;
+font-size: 40px;
+}
+#newsection{
+position: absolute;
+height: 300px;
+border: salmon;
+top: 1550px;
+
+}
+form a {
+position: relative;
+left: 700px;
+}
+/*feedback */
+
+/**card**/
+/* header div {
+background-color: hotpink;
+} */
+/* main img {
+width: 500px ;
+height:500px;
+
+} */
+
+
+
+
+
+#logo{
+    width: px;
+    height: px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+
+
+/*form css*/
+
+
+
+
+
+/* form {
+position: relative;
+background-color: rgb(10, 10, 10);
+border: none;
+color: rgb(245, 240, 244);
+padding: 60px;
+text-decoration: none;
+margin: 0px 0px;
+cursor: pointer;
+top: 800px;
+ 
+
+}
+form lable {
+  color: aliceblue;
+  width:100px ;
+}
+form input,select,button,lable,label{
+  width:400px;
+  height: 40px;
+}
+form input,lable,button,select{
+  position: relative;
+  left: 350px;
+  border-radius: 15px;
+}
+label,.radio{
+  color: beige;
+}
+#but{
+  position: relative;
+  left:590px ;  
+}
+#yes{
+    color:red;
+
+}
+input[type=text], select {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  label{
+      position: relative;
+      left: 350px;
+      size: 90px;
+
+  }
+  .radio{
+      width:20px ;
+      height:20px ;
+      position: relative;
+      left: 400px;
+  }
+  text{
+position: relative;
+left:1050px;
+  }
+
+fieldset{
+padding-top: 30px;
+padding-bottom: 30px;}
+
+#form fieldset legend{
+font-size: 16px;
+right: -80px;
+
+} */
+
+form{
+    position: relative;
+    top: 131%;
+}
+.container{
+    position: relative;
+    left:9%;
+}
+#rent{
+width:20px ;
+height:20px; 
+position: relative;
+left:2% ;
+top:10%
+}
+.yesno{
+position: relative;
+left:5% ;
+bottom:45%;
+}
+.container {
+
+width: 80%;
+padding: 20px;
+}
+.container h2{
+width: 100%;
+color: #45F3FF;
+font-size: 36px;
+text-align: center;
+margin-bottom: 10px;
+}
+.container .row100{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.container .row100 .col{
+position: relative;
+width: 100%;
+padding: 0 10px;
+margin: 30px 0 10px;
+transition: 0.5s;
+}
+.container .row100 .inputBox{
+position: relative;
+width: 100%;
+height: 40px;
+color: #45F3FF;
+}
+.container .row100 .inputBox input,
+.container .row100 .inputBox select{
+position: absolute;
+width: 100%;
+height: 100%;
+background: transparent;
+box-shadow: none;
+border: none;
+outline: none;
+font-size: 18px;
+padding: 0 10px;
+z-index: 1;
+color: #000;
+}
+
+.container .row100 .inputBox .text{
+top: 0;
+left: 0;
+line-height: 40px;
+font-size: 18px;
+padding: 0 10px;
+display: block;
+transition: 0.5s;
+pointer-events: none;
+}
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text{
+top: -35px;
+left: -10px;
+}
+.container .row100 .inputBox select:focus + .text,
+.container .row100 .inputBox select:valid + .text{
+top: -35px;
+left: -10px;
+}
+.container .row100 .inputBox .line{
+position: absolute;
+bottom: 0;
+display: block;
+width: 100%;
+height: 2px;
+background: #45F3FF;
+transition: 0.5s;
+border-radius: 2px;
+pointer-events: none;
+}
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line{
+height: 100%;
+}
+.container .row100 .inputBox select:focus ~ .line,
+.container .row100 .inputBox select:valid ~ .line{
+height: 100%;
+}
+input[type="submit"]
+{
+border: none;
+padding: 7px 35px;
+cursor: pointer;
+outline: none;
+background: #45F3FF;
+color: #000;
+font-size: 18px;
+border-radius: 2px;
+}
